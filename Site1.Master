@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ASOIU4.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 40px;
+            width: 146px;
+            background-color: #D3D3D3;
+            text-align: center;
+        }
+        .auto-style3 {
+            text-align: center;
+            background-color: #808080;
+        }
+        .auto-style5 {
+            height: 40px;
+            background-color: #A9A9A9;
+            width: 146px;
+            text-align: center;
+        }
+        .auto-style6 {
+            color: #FFFFFF;
+        }
+        
+        .auto-style8 {
+            color: #FFFFFF;
+            font-family: Didot;
+            font-size: xx-large;
+        }
+        .auto-style9 {
+            width: 312px;
+        }
+        .auto-style11 {
+           width: 705px;
+            text-align: center;
+            background-color: #808080;
+        }
+        .auto-style12 {
+            text-align: center;
+            color: #2F4F4F;
+            
+        }
+         .auto-style13 {
+            text-align: center;
+           
+        }
+        .auto-style14 {
+            text-align: center;
+            background-color: #808080;
+            width: 157px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style9" rowspan="5"><asp:Image ID="Image1" runat="server" Height="173px" Width="268px" ImageURL ="salon.jpg" CssClass="auto-style6"/></td>
+                        <td class="auto-style11" rowspan="5"><asp:Label ID="Label5" runat="server" CssClass="auto-style8" Text="Салон красоты &#171Красивые люди&#187"></asp:Label></td>
+                        <td class="auto-style14"><asp:Label class="auto-style6" ID="Label3" runat="server">Логин</asp:Label></td>
+                        <td class="auto-style3"><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style14"><asp:Label class="auto-style6" ID="Label2" runat="server">Пароль</asp:Label></td>
+                        <td class="auto-style3"><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style14"><asp:Button ID="Button1" runat="server" Text="Войти" OnClick="Button1_Click" />
+                <asp:Button ID="Button2" runat="server" Text="Выйти" OnClick="Button2_Click" /></td>
+                        <td class="auto-style3"><asp:Button ID="Button3" runat="server" Text="Зарегистрироваться" OnClick="Button3_Click" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" colspan="2"><asp:Label ID="Label1" runat="server"></asp:Label></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" colspan="2"><asp:Label ID="Label4" runat="server"></asp:Label></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">
+                            <table class="auto-style1">
+                                <tr>
+                                    <td class="auto-style2"><asp:LinkButton ID="LinkButton1" runat="server" CssClass="auto-style12" OnClick="LinkButton1_Click">Главная</asp:LinkButton></td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style5"><asp:LinkButton ID="LinkButton2" runat="server" CssClass="auto-style12" OnClick="LinkButton2_Click">Новости</asp:LinkButton></td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style2"><asp:LinkButton ID="LinkButton3" runat="server" CssClass="auto-style12" OnClick="LinkButton3_Click">Фильтр1</asp:LinkButton></td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style5"><asp:LinkButton ID="LinkButton4" runat="server" CssClass="auto-style12" OnClick="LinkButton4_Click">Фильтр2</asp:LinkButton></td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style2"><asp:LinkButton ID="LinkButton5" runat="server" CssClass="auto-style12" OnClick="LinkButton5_Click">АДМИН</asp:LinkButton></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td colspan="3" class="auto-style13"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                           
+                </asp:ContentPlaceHolder></td>
+                    </tr>
+                </table>
+           
+        </div>
+    </form>
+</body>
+</html>
